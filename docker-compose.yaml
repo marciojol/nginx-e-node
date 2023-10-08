@@ -14,7 +14,6 @@ services:
       - ./node/app:/usr/src/app
     depends_on:
       - db
-      - nginx
     networks:
       - node-network
 
@@ -27,6 +26,8 @@ services:
     tty: true
     ports:
       - "8080:80"
+    depends_on:
+      - node
     networks:
       - node-network
 
