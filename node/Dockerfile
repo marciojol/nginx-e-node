@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY app/package.json /usr/src/app/
 
-COPY app .
+COPY app . /usr/src/app/
 
 EXPOSE 3000
 
