@@ -6,8 +6,6 @@ COPY app/package.json /usr/src/app/
 
 COPY app . /usr/src/app/
 
-VOLUME ["/usr/src/app/node_modules"]
-
 EXPOSE 3000
 
 RUN apk update && apk add bash

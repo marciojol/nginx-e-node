@@ -12,6 +12,7 @@ services:
     tty: true
     volumes:
       - ./node/app:/usr/src/app
+      - /usr/src/app/node_modules
     depends_on:
       - db
     networks:
