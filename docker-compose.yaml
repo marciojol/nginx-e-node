@@ -36,7 +36,7 @@ services:
     build:
       context: mysql
       dockerfile: Dockerfile
-    image: marciojolima:mysql
+    image: marciojolima/mysql
     command: --innodb-use-native-aio=0
     container_name: db
     restart: always
